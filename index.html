@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreshFuel — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px;
+    color: #222;
+    background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e8; background: #111; }
+    a { color: #7fb3ff; }
+    h1, h2 { border-color: #333; }
+    table, th, td { border-color: #333; }
+    .meta-banner { background: #1a1a1a; color: #e8e8e8; border-color: #333; }
+  }
+  h1 { font-size: 1.8rem; border-bottom: 1px solid #ddd; padding-bottom: 8px; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; border-bottom: 1px solid #eee; padding-bottom: 4px; }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  .meta-banner {
+    background: #f5f5f5;
+    color: #222;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+  .lang-switch { margin-bottom: 1.5rem; }
+  .lang-switch a { font-size: 0.95rem; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 2rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: rgba(127,127,127,0.08); }
+  code { background: rgba(127,127,127,0.15); padding: 1px 4px; border-radius: 3px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<h1>FreshFuel — Privacy Policy</h1>
+
+<div class="meta-banner">
+  <strong>Last updated:</strong> 4 May 2026 &nbsp;·&nbsp; <strong>Effective:</strong> 4 May 2026
+</div>
+
+<p class="lang-switch"><a href="./vi/">Tiếng Việt</a></p>
+
+<hr>
+
+<h2>1. Who we are</h2>
+<p>FreshFuel is a bilingual (English / Vietnamese) reference app for fruits, vegetables, nuts, and meats — providing nutrition information, traditional culinary uses, seasonal availability, and general food-safety notes for users in Australia and Vietnam.</p>
+<p>FreshFuel is operated by <strong>Tran Hoang Phu</strong> (also known as Andy Tran), an individual sole operator, trading as <strong>GreenBite</strong>.</p>
+<p>If you have any questions about this policy or your data, contact us at:</p>
+<p><strong>Email:</strong> <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a></p>
+
+<h2>2. What this policy covers</h2>
+<p>This policy describes how the FreshFuel mobile app (iOS and Android) and the GreenBite-operated backend service at <code>api.mindfulmentor.vn</code> handle information about you. It does not cover other websites, services, or apps that we do not operate.</p>
+
+<h2>3. What data we collect</h2>
+<p>FreshFuel does <strong>not</strong> require an account or sign-in, and the app does not request any device permissions (no camera, photo library, location, contacts, or microphone access).</p>
+<p>The data we (or our service providers) collect is:</p>
+<ul>
+  <li><strong>Anonymous usage events</strong> — screens viewed, features used, session length, language, country/region, device model, OS version, app version (collected by Firebase Analytics).</li>
+  <li><strong>Crash reports</strong> — stack traces, device model, OS version, app version, and the events leading up to a crash, if one occurs (collected by Firebase Crashlytics).</li>
+  <li><strong>Performance traces</strong> — network request timing, app start time, and screen render time (collected by Firebase Performance Monitoring).</li>
+  <li><strong>Device-attestation tokens</strong> — short-lived tokens issued by Apple's App Attest (iOS) or Google's Play Integrity (Android), sent on each backend request to verify that requests come from a genuine, unmodified copy of the app (collected by Firebase App Check).</li>
+  <li><strong>Network metadata at the edge and server</strong> — IP address, request path, timestamp, user-agent, and TLS-handshake details, processed by Cloudflare (network edge) and our origin web server (Apache HTTP Server) for delivery, security, and abuse prevention.</li>
+  <li><strong>Local on-device preferences</strong> — your selected language, last-viewed region, and similar interface state. This stays on your device and never leaves it.</li>
+</ul>
+
+<p>We do <strong>not</strong> collect:</p>
+<ul>
+  <li>Your name, email address, phone number, or any personal contact information</li>
+  <li>Photos, videos, or files from your device (the app has no image upload feature)</li>
+  <li>Your precise location</li>
+  <li>Health, medical, biometric, or fitness records</li>
+  <li>Payment information (FreshFuel has no in-app purchases or subscriptions)</li>
+  <li>The advertising identifier (IDFA / GAID) — FreshFuel does not request App Tracking Transparency on iOS and does not use the GAID on Android</li>
+</ul>
+
+<h2>4. How we use this data</h2>
+<p>We use the anonymous data only to:</p>
+<ul>
+  <li>Understand which features and content people find useful</li>
+  <li>Detect, diagnose, and fix crashes, performance issues, and bugs</li>
+  <li>Verify that backend requests come from a genuine copy of the app (anti-abuse)</li>
+  <li>Improve the quality of the bilingual content and translations</li>
+  <li>Decide which products or features to add next</li>
+</ul>
+<p>We do not sell or rent your data. We do not use it for targeted advertising. We do not profile individuals.</p>
+
+<h2>5. Service providers (data processors)</h2>
+<p>The following third parties process data on our behalf:</p>
+
+<table>
+<thead>
+<tr><th>Provider</th><th>Purpose</th><th>Data</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Google LLC</strong> — Firebase Analytics</td>
+  <td>Anonymous usage analytics</td>
+  <td>Usage events, device info, approximate (country-level) location</td>
+</tr>
+<tr>
+  <td><strong>Google LLC</strong> — Firebase Crashlytics</td>
+  <td>Crash reporting and diagnosis</td>
+  <td>Stack traces, device info, app version</td>
+</tr>
+<tr>
+  <td><strong>Google LLC</strong> — Firebase Performance Monitoring</td>
+  <td>Performance metrics</td>
+  <td>Network and rendering timing data</td>
+</tr>
+<tr>
+  <td><strong>Google LLC</strong> — Firebase App Check</td>
+  <td>Anti-abuse / app integrity verification</td>
+  <td>Short-lived attestation tokens</td>
+</tr>
+<tr>
+  <td><strong>Apple Inc.</strong> (sub-processor on iOS only)</td>
+  <td>Issues App Attest tokens used by Firebase App Check</td>
+  <td>Device-bound attestation only</td>
+</tr>
+<tr>
+  <td><strong>Cloudflare, Inc.</strong></td>
+  <td>Content delivery, DDoS protection, and TLS termination for the backend</td>
+  <td>IP address, request metadata, timestamps, network error reports</td>
+</tr>
+<tr>
+  <td><strong>GreenBite-operated backend</strong> at <code>api.mindfulmentor.vn</code> (Apache HTTP Server + Go application)</td>
+  <td>Serves the app's product, nutrition, wellness, and seasonal data</td>
+  <td>Apache access logs (IP, request, user-agent, status); the Go application performs no per-request access logging</td>
+</tr>
+<tr>
+  <td><strong>Google LLC</strong> — Gemini API (server-side only)</td>
+  <td>Generates descriptive product content during authoring (e.g., culinary uses, storage tips)</td>
+  <td>Only generic product names (e.g., "strawberry", "longan") — never user data</td>
+</tr>
+</tbody>
+</table>
+
+<p>Each provider processes the data described above under its own privacy policy:</p>
+<ul>
+  <li>Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></li>
+  <li>Apple: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+</ul>
+
+<p>We do not share your data with any other third party.</p>
+
+<h2>6. Data retention</h2>
+<table>
+<thead>
+<tr><th>Data</th><th>Retention</th></tr>
+</thead>
+<tbody>
+<tr><td>Firebase Analytics events</td><td>Up to 14 months</td></tr>
+<tr><td>Firebase Crashlytics reports</td><td>Up to 90 days</td></tr>
+<tr><td>Firebase Performance Monitoring traces</td><td>Up to 90 days</td></tr>
+<tr><td>Firebase App Check tokens</td><td>Short-lived (seconds); not persisted</td></tr>
+<tr><td>Cloudflare edge logs</td><td>Per Cloudflare's standard retention; typically a few days for analytics on our plan</td></tr>
+<tr><td>Apache access logs (origin server)</td><td>Rotated automatically by the operating system; typically up to 30 days before deletion</td></tr>
+<tr><td>Go application logs</td><td>No per-request access logging; only diagnostic events captured by the OS journal, which rotates automatically</td></tr>
+<tr><td>Local on-device preferences</td><td>Until you uninstall the app or clear app data</td></tr>
+</tbody>
+</table>
+
+<h2>7. AI-generated content</h2>
+<p>Some descriptive content shown in the app — particularly long-form product overviews, culinary uses, and storage tips — was generated server-side using AI (Google Gemini) and then reviewed and edited for accuracy. <strong>Your interactions with the app are never sent to Gemini.</strong> Only generic product names (such as "strawberry" or "longan") are sent during content authoring, which happens on our side, not yours. AI-generated text may occasionally contain errors; please consult authoritative sources for critical health or dietary decisions.</p>
+
+<h2>8. Your rights and choices</h2>
+<p>Even though we collect no personally identifying information, you have the following options:</p>
+<ul>
+  <li><strong>Uninstall the app</strong> — this is the most reliable way to stop all collection from your device. FreshFuel does not currently offer an in-app analytics opt-out toggle.</li>
+  <li><strong>iOS:</strong> You can manage Apple's own analytics collection under <em>Settings → Privacy &amp; Security → Analytics &amp; Improvements</em>. (FreshFuel does not request the App Tracking Transparency prompt and does not use the IDFA.)</li>
+  <li><strong>Android:</strong> You can limit ad personalization under <em>Settings → Privacy → Ads</em>. (FreshFuel does not use the GAID for advertising.)</li>
+  <li><strong>Request information</strong> about what (if any) data is associated with your device by emailing <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>.</li>
+  <li><strong>Request deletion</strong> of analytics data tied to your device's anonymous identifier by emailing <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a> — we will pass the request to Google for processing.</li>
+</ul>
+
+<h2>9. Children's privacy</h2>
+<p>FreshFuel is a general-audience reference app. It is not directed at children under 13 (or the equivalent minimum age in your country). We do not knowingly collect personal information from children. If you believe a child's data has been collected in error, please contact us and we will delete it.</p>
+
+<h2>10. Security</h2>
+<p>We rely on Google's, Apple's, and Cloudflare's industry-standard security for the data described above. Communications between the app and our backend are encrypted using TLS 1.2 or higher. Because we do not collect personal information ourselves, we hold no user data on our own systems that could be exposed in a breach.</p>
+
+<h2>11. Australian users</h2>
+<p>GreenBite is committed to handling personal information in accordance with the <strong>Privacy Act 1988 (Cth)</strong> and the <strong>Australian Privacy Principles (APPs)</strong>. You can request access to, correction of, or deletion of any information held about you by contacting <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>. If you are unsatisfied with our response, you may contact the Office of the Australian Information Commissioner (OAIC) at <a href="https://www.oaic.gov.au">https://www.oaic.gov.au</a>.</p>
+
+<h2>12. Vietnamese users</h2>
+<p>For users in Vietnam, we follow the principles set out in <strong>Decree No. 13/2023/ND-CP on Personal Data Protection</strong>. You have the right to:</p>
+<ul>
+  <li>Access information about how your personal data is processed</li>
+  <li>Correct inaccurate personal data</li>
+  <li>Request deletion of your personal data</li>
+  <li>Withdraw consent at any time</li>
+  <li>Data portability — receive your personal data in a structured, machine-readable format</li>
+  <li>File a complaint with the Department of Cybersecurity and High-Tech Crime Prevention and Control (A05) of the Ministry of Public Security regarding the handling of your personal data</li>
+</ul>
+<p>To exercise any of these rights, contact <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>.</p>
+
+<h2>13. International data transfers</h2>
+<p>Our service providers (Google, Cloudflare, Apple) operate globally. Data described in this policy may be processed in jurisdictions outside Australia and Vietnam, including the United States and Singapore. These providers maintain safeguards (including the EU Standard Contractual Clauses where applicable) for cross-border transfers.</p>
+
+<h2>14. Health and nutrition disclaimer</h2>
+<p>FreshFuel provides general information about produce and animal foods, including nutrition data and traditional culinary uses. <strong>It is not a medical, diagnostic, or treatment service.</strong> Information in the app is not a substitute for professional medical advice. Always consult a qualified healthcare provider about your individual health situation.</p>
+
+<h2>15. Changes to this policy</h2>
+<p>We may update this policy from time to time. Material changes will be reflected in the <strong>Last updated</strong> date at the top of this page. Continued use of FreshFuel after a change constitutes acceptance of the updated policy.</p>
+
+<h2>16. Contact</h2>
+<p>Tran Hoang Phu (Andy Tran), trading as GreenBite<br>
+Email: <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a></p>
+
+</body>
+</html>
