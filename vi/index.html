@@ -69,9 +69,7 @@
 <p>FreshFuel <strong>không</strong> yêu cầu tài khoản hoặc đăng nhập, và ứng dụng không yêu cầu bất kỳ quyền truy cập thiết bị nào (không truy cập máy ảnh, thư viện ảnh, vị trí, danh bạ hay micro).</p>
 <p>Dữ liệu mà chúng tôi (hoặc các nhà cung cấp dịch vụ của chúng tôi) thu thập gồm:</p>
 <ul>
-  <li><strong>Sự kiện sử dụng ẩn danh</strong> — màn hình đã xem, tính năng đã dùng, thời lượng phiên, ngôn ngữ, quốc gia/khu vực, dòng máy, phiên bản hệ điều hành, phiên bản ứng dụng (do Firebase Analytics thu thập).</li>
   <li><strong>Báo cáo sự cố</strong> — dấu vết ngăn xếp (stack trace), dòng máy, phiên bản hệ điều hành, phiên bản ứng dụng và các sự kiện trước khi xảy ra sự cố, nếu có (do Firebase Crashlytics thu thập).</li>
-  <li><strong>Dữ liệu hiệu năng</strong> — thời gian phản hồi mạng, thời gian khởi động ứng dụng và thời gian dựng màn hình (do Firebase Performance Monitoring thu thập).</li>
   <li><strong>Mã chứng thực thiết bị</strong> — mã ngắn hạn do App Attest của Apple (iOS) hoặc Play Integrity của Google (Android) cấp, gửi trong mỗi yêu cầu đến máy chủ phụ trợ để xác minh yêu cầu đến từ bản ứng dụng chính thống, không bị chỉnh sửa (do Firebase App Check thu thập).</li>
   <li><strong>Dữ liệu mạng tại biên và tại máy chủ</strong> — địa chỉ IP, đường dẫn yêu cầu, thời gian, chuỗi user-agent và thông tin TLS, được Cloudflare (biên mạng) và máy chủ web gốc của chúng tôi (Apache HTTP Server) xử lý phục vụ truyền tải, bảo mật và chống lạm dụng.</li>
   <li><strong>Tùy chọn lưu trên thiết bị</strong> — ngôn ngữ đã chọn, vùng đã xem gần nhất và các trạng thái giao diện tương tự. Dữ liệu này nằm trên thiết bị của bạn và không bao giờ được gửi đi.</li>
@@ -90,11 +88,8 @@
 <h2>4. Mục đích sử dụng dữ liệu</h2>
 <p>Chúng tôi chỉ sử dụng dữ liệu ẩn danh để:</p>
 <ul>
-  <li>Hiểu tính năng và nội dung nào hữu ích với người dùng</li>
-  <li>Phát hiện, chẩn đoán và khắc phục sự cố, lỗi hiệu năng và lỗi phần mềm</li>
+  <li>Phát hiện, chẩn đoán và khắc phục sự cố và lỗi phần mềm</li>
   <li>Xác minh yêu cầu đến máy chủ đến từ bản ứng dụng chính thống (chống lạm dụng)</li>
-  <li>Cải thiện chất lượng nội dung và bản dịch song ngữ</li>
-  <li>Quyết định nên bổ sung sản phẩm hoặc tính năng nào tiếp theo</li>
 </ul>
 <p>Chúng tôi không bán hoặc cho thuê dữ liệu của bạn. Chúng tôi không sử dụng dữ liệu cho quảng cáo nhắm mục tiêu. Chúng tôi không lập hồ sơ cá nhân.</p>
 
@@ -107,19 +102,9 @@
 </thead>
 <tbody>
 <tr>
-  <td><strong>Google LLC</strong> — Firebase Analytics</td>
-  <td>Phân tích sử dụng ẩn danh</td>
-  <td>Sự kiện sử dụng, thông tin thiết bị, vị trí gần đúng (ở mức quốc gia)</td>
-</tr>
-<tr>
   <td><strong>Google LLC</strong> — Firebase Crashlytics</td>
   <td>Báo cáo và chẩn đoán sự cố</td>
   <td>Dấu vết ngăn xếp, thông tin thiết bị, phiên bản ứng dụng</td>
-</tr>
-<tr>
-  <td><strong>Google LLC</strong> — Firebase Performance Monitoring</td>
-  <td>Thống kê hiệu năng</td>
-  <td>Dữ liệu thời gian mạng và hiển thị</td>
 </tr>
 <tr>
   <td><strong>Google LLC</strong> — Firebase App Check</td>
@@ -164,12 +149,10 @@
 <tr><th>Dữ liệu</th><th>Thời gian lưu</th></tr>
 </thead>
 <tbody>
-<tr><td>Sự kiện Firebase Analytics</td><td>Tối đa 14 tháng</td></tr>
 <tr><td>Báo cáo Firebase Crashlytics</td><td>Tối đa 90 ngày</td></tr>
-<tr><td>Dữ liệu Firebase Performance Monitoring</td><td>Tối đa 90 ngày</td></tr>
 <tr><td>Mã Firebase App Check</td><td>Ngắn hạn (vài giây); không lưu trữ</td></tr>
 <tr><td>Nhật ký biên Cloudflare</td><td>Theo chính sách lưu trữ tiêu chuẩn của Cloudflare; thường vài ngày đối với gói của chúng tôi</td></tr>
-<tr><td>Nhật ký truy cập Apache (máy chủ gốc)</td><td>Tự động luân chuyển bởi hệ điều hành; thường tối đa 30 ngày trước khi bị xóa</td></tr>
+<tr><td>Nhật ký truy cập Apache (máy chủ gốc)</td><td>Tự động luân chuyển hằng ngày; lưu tối đa 14 ngày lịch sử rồi bị xóa</td></tr>
 <tr><td>Nhật ký ứng dụng Go</td><td>Không ghi nhật ký truy cập theo từng yêu cầu; chỉ các sự kiện chẩn đoán được ghi vào nhật ký hệ điều hành và tự động luân chuyển</td></tr>
 <tr><td>Tùy chọn lưu trên thiết bị</td><td>Cho đến khi bạn gỡ ứng dụng hoặc xóa dữ liệu ứng dụng</td></tr>
 </tbody>
@@ -179,13 +162,12 @@
 <p>Một phần nội dung mô tả hiển thị trong ứng dụng — đặc biệt là phần tổng quan dài về sản phẩm, cách sử dụng trong ẩm thực và mẹo bảo quản — được tạo phía máy chủ bằng AI (Google Gemini) và sau đó được kiểm tra, biên tập lại để đảm bảo chính xác. <strong>Tương tác của bạn với ứng dụng không bao giờ được gửi đến Gemini.</strong> Chỉ tên sản phẩm chung (như "strawberry" hoặc "longan") được gửi trong quá trình soạn nội dung, và việc đó diễn ra phía chúng tôi, không phải phía bạn. Văn bản do AI tạo đôi khi có thể có sai sót; vui lòng tham khảo các nguồn uy tín cho các quyết định quan trọng về sức khỏe hoặc dinh dưỡng.</p>
 
 <h2>8. Quyền và lựa chọn của bạn</h2>
-<p>Mặc dù chúng tôi không thu thập thông tin định danh cá nhân, bạn vẫn có các tùy chọn sau:</p>
+<p>Vì FreshFuel không thu thập thông tin định danh cá nhân, các tùy chọn của bạn là:</p>
 <ul>
-  <li><strong>Gỡ ứng dụng</strong> — đây là cách đáng tin cậy nhất để dừng mọi hoạt động thu thập từ thiết bị của bạn. FreshFuel hiện không cung cấp công tắc tắt phân tích ẩn danh trong ứng dụng.</li>
-  <li><strong>iOS:</strong> Bạn có thể quản lý hoạt động thu thập phân tích của Apple tại <em>Cài đặt → Quyền riêng tư &amp; Bảo mật → Phân tích &amp; Cải thiện</em>. (FreshFuel không hiển thị thông báo App Tracking Transparency và không sử dụng IDFA.)</li>
-  <li><strong>Android:</strong> Bạn có thể giới hạn cá nhân hóa quảng cáo tại <em>Cài đặt → Quyền riêng tư → Quảng cáo</em>. (FreshFuel không sử dụng GAID cho mục đích quảng cáo.)</li>
-  <li><strong>Yêu cầu thông tin</strong> về dữ liệu (nếu có) liên kết với thiết bị của bạn bằng cách gửi email đến <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>.</li>
-  <li><strong>Yêu cầu xóa</strong> dữ liệu phân tích gắn với mã định danh ẩn danh của thiết bị bạn bằng cách gửi email đến <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a> — chúng tôi sẽ chuyển yêu cầu cho Google xử lý.</li>
+  <li><strong>Gỡ ứng dụng</strong> — cách đáng tin cậy nhất để dừng mọi hoạt động thu thập dữ liệu từ thiết bị của bạn. Sau khi gỡ, ứng dụng không gửi thêm bất kỳ báo cáo sự cố hay mã chứng thực nào.</li>
+  <li><strong>Yêu cầu thông tin</strong> về dữ liệu chẩn đoán (nếu có) liên kết với thiết bị của bạn bằng cách gửi email đến <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>.</li>
+  <li><strong>Yêu cầu xóa</strong> dữ liệu sự cố gắn với mã cài đặt ẩn danh của thiết bị bạn bằng cách gửi email đến <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a> — chúng tôi sẽ chuyển yêu cầu cho Google xử lý qua API xóa dữ liệu của Firebase Crashlytics.</li>
+  <li><strong>Lưu ý:</strong> FreshFuel không hiển thị quảng cáo, không yêu cầu thông báo App Tracking Transparency của Apple, không sử dụng IDFA (iOS) hay GAID (Android), và không thực hiện theo dõi xuyên ứng dụng hoặc xuyên trang. Do đó, các tùy chọn "phân tích" / "cá nhân hóa quảng cáo" ở cấp thiết bị của Apple và Google không kiểm soát bất kỳ luồng dữ liệu nào của FreshFuel.</li>
 </ul>
 
 <h2>9. Quyền riêng tư của trẻ em</h2>
