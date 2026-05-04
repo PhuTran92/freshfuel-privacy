@@ -69,9 +69,7 @@
 <p>FreshFuel does <strong>not</strong> require an account or sign-in, and the app does not request any device permissions (no camera, photo library, location, contacts, or microphone access).</p>
 <p>The data we (or our service providers) collect is:</p>
 <ul>
-  <li><strong>Anonymous usage events</strong> — screens viewed, features used, session length, language, country/region, device model, OS version, app version (collected by Firebase Analytics).</li>
   <li><strong>Crash reports</strong> — stack traces, device model, OS version, app version, and the events leading up to a crash, if one occurs (collected by Firebase Crashlytics).</li>
-  <li><strong>Performance traces</strong> — network request timing, app start time, and screen render time (collected by Firebase Performance Monitoring).</li>
   <li><strong>Device-attestation tokens</strong> — short-lived tokens issued by Apple's App Attest (iOS) or Google's Play Integrity (Android), sent on each backend request to verify that requests come from a genuine, unmodified copy of the app (collected by Firebase App Check).</li>
   <li><strong>Network metadata at the edge and server</strong> — IP address, request path, timestamp, user-agent, and TLS-handshake details, processed by Cloudflare (network edge) and our origin web server (Apache HTTP Server) for delivery, security, and abuse prevention.</li>
   <li><strong>Local on-device preferences</strong> — your selected language, last-viewed region, and similar interface state. This stays on your device and never leaves it.</li>
@@ -90,11 +88,8 @@
 <h2>4. How we use this data</h2>
 <p>We use the anonymous data only to:</p>
 <ul>
-  <li>Understand which features and content people find useful</li>
-  <li>Detect, diagnose, and fix crashes, performance issues, and bugs</li>
+  <li>Detect, diagnose, and fix crashes and bugs</li>
   <li>Verify that backend requests come from a genuine copy of the app (anti-abuse)</li>
-  <li>Improve the quality of the bilingual content and translations</li>
-  <li>Decide which products or features to add next</li>
 </ul>
 <p>We do not sell or rent your data. We do not use it for targeted advertising. We do not profile individuals.</p>
 
@@ -107,19 +102,9 @@
 </thead>
 <tbody>
 <tr>
-  <td><strong>Google LLC</strong> — Firebase Analytics</td>
-  <td>Anonymous usage analytics</td>
-  <td>Usage events, device info, approximate (country-level) location</td>
-</tr>
-<tr>
   <td><strong>Google LLC</strong> — Firebase Crashlytics</td>
   <td>Crash reporting and diagnosis</td>
   <td>Stack traces, device info, app version</td>
-</tr>
-<tr>
-  <td><strong>Google LLC</strong> — Firebase Performance Monitoring</td>
-  <td>Performance metrics</td>
-  <td>Network and rendering timing data</td>
 </tr>
 <tr>
   <td><strong>Google LLC</strong> — Firebase App Check</td>
@@ -164,12 +149,10 @@
 <tr><th>Data</th><th>Retention</th></tr>
 </thead>
 <tbody>
-<tr><td>Firebase Analytics events</td><td>Up to 14 months</td></tr>
 <tr><td>Firebase Crashlytics reports</td><td>Up to 90 days</td></tr>
-<tr><td>Firebase Performance Monitoring traces</td><td>Up to 90 days</td></tr>
 <tr><td>Firebase App Check tokens</td><td>Short-lived (seconds); not persisted</td></tr>
 <tr><td>Cloudflare edge logs</td><td>Per Cloudflare's standard retention; typically a few days for analytics on our plan</td></tr>
-<tr><td>Apache access logs (origin server)</td><td>Rotated automatically by the operating system; typically up to 30 days before deletion</td></tr>
+<tr><td>Apache access logs (origin server)</td><td>Rotated daily by the operating system; up to 14 days of history retained, then deleted</td></tr>
 <tr><td>Go application logs</td><td>No per-request access logging; only diagnostic events captured by the OS journal, which rotates automatically</td></tr>
 <tr><td>Local on-device preferences</td><td>Until you uninstall the app or clear app data</td></tr>
 </tbody>
@@ -179,13 +162,12 @@
 <p>Some descriptive content shown in the app — particularly long-form product overviews, culinary uses, and storage tips — was generated server-side using AI (Google Gemini) and then reviewed and edited for accuracy. <strong>Your interactions with the app are never sent to Gemini.</strong> Only generic product names (such as "strawberry" or "longan") are sent during content authoring, which happens on our side, not yours. AI-generated text may occasionally contain errors; please consult authoritative sources for critical health or dietary decisions.</p>
 
 <h2>8. Your rights and choices</h2>
-<p>Even though we collect no personally identifying information, you have the following options:</p>
+<p>Because FreshFuel collects no personally identifying information, the available choices are:</p>
 <ul>
-  <li><strong>Uninstall the app</strong> — this is the most reliable way to stop all collection from your device. FreshFuel does not currently offer an in-app analytics opt-out toggle.</li>
-  <li><strong>iOS:</strong> You can manage Apple's own analytics collection under <em>Settings → Privacy &amp; Security → Analytics &amp; Improvements</em>. (FreshFuel does not request the App Tracking Transparency prompt and does not use the IDFA.)</li>
-  <li><strong>Android:</strong> You can limit ad personalization under <em>Settings → Privacy → Ads</em>. (FreshFuel does not use the GAID for advertising.)</li>
-  <li><strong>Request information</strong> about what (if any) data is associated with your device by emailing <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>.</li>
-  <li><strong>Request deletion</strong> of analytics data tied to your device's anonymous identifier by emailing <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a> — we will pass the request to Google for processing.</li>
+  <li><strong>Uninstall the app</strong> — the most reliable way to stop all data collection from your device. After uninstall, the app sends no further crash reports or app-attestation tokens.</li>
+  <li><strong>Request information</strong> about what (if any) diagnostic data is associated with your device by emailing <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>.</li>
+  <li><strong>Request deletion</strong> of crash data tied to your device's anonymous installation ID by emailing <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a> — we will pass the request to Google for processing through the Firebase Crashlytics deletion API.</li>
+  <li><strong>For reference:</strong> FreshFuel does not display ads, does not request Apple's App Tracking Transparency prompt, does not use the IDFA (iOS) or GAID (Android), and does not perform any cross-app or cross-site tracking. Apple's and Google's device-level "analytics" / "ad personalization" settings therefore do not control any FreshFuel data flow.</li>
 </ul>
 
 <h2>9. Children's privacy</h2>
