@@ -49,7 +49,7 @@
 <h1>FreshFuel — Privacy Policy</h1>
 
 <div class="meta-banner">
-  <strong>Last updated:</strong> 4 May 2026 &nbsp;·&nbsp; <strong>Effective:</strong> 4 May 2026
+  <strong>Last updated:</strong> 9 May 2026 &nbsp;·&nbsp; <strong>Effective:</strong> 9 May 2026
 </div>
 
 <p class="lang-switch"><a href="./vi/">Tiếng Việt</a></p>
@@ -70,6 +70,8 @@
 <p>The data we (or our service providers) collect is:</p>
 <ul>
   <li><strong>Crash reports</strong> — stack traces, device model, OS version, app version, and the events leading up to a crash, if one occurs (collected by Firebase Crashlytics).</li>
+  <li><strong>Anonymous usage events</strong> — which screens you open, which categories you browse, which features you use (e.g. catalogue browse, wellness lookup, seasonal guide). We log feature-engagement events but never the text you type into the search bar (collected by Firebase Analytics, tied to an anonymous app-installation ID, not to your identity).</li>
+  <li><strong>Performance metrics</strong> — app start-up time, screen-render time, and backend-request latency. Used to measure and improve app speed (collected by Firebase Performance Monitoring).</li>
   <li><strong>Device-attestation tokens</strong> — short-lived tokens issued by Apple's App Attest (iOS) or Google's Play Integrity (Android), sent on each backend request to verify that requests come from a genuine, unmodified copy of the app (collected by Firebase App Check).</li>
   <li><strong>Network metadata at the edge and server</strong> — IP address, request path, timestamp, user-agent, and TLS-handshake details, processed by Cloudflare (network edge) and our origin web server (Apache HTTP Server) for delivery, security, and abuse prevention.</li>
   <li><strong>Local on-device preferences</strong> — your selected language, last-viewed region, and similar interface state. This stays on your device and never leaves it.</li>
@@ -89,6 +91,8 @@
 <p>We use the anonymous data only to:</p>
 <ul>
   <li>Detect, diagnose, and fix crashes and bugs</li>
+  <li>Understand which features people use, so we can plan improvements (e.g. which wellness goals are most viewed, which catalogue filters are most useful)</li>
+  <li>Measure and improve app performance (start-up time, screen-render time, backend latency)</li>
   <li>Verify that backend requests come from a genuine copy of the app (anti-abuse)</li>
 </ul>
 <p>We do not sell or rent your data. We do not use it for targeted advertising. We do not profile individuals.</p>
@@ -105,6 +109,16 @@
   <td><strong>Google LLC</strong> — Firebase Crashlytics</td>
   <td>Crash reporting and diagnosis</td>
   <td>Stack traces, device info, app version</td>
+</tr>
+<tr>
+  <td><strong>Google LLC</strong> — Firebase Analytics</td>
+  <td>Anonymous feature-usage analytics, tied to an app-installation ID (not your identity)</td>
+  <td>Screen views, feature events (e.g. "wellness_open", "product_open"), language, anonymous installation ID</td>
+</tr>
+<tr>
+  <td><strong>Google LLC</strong> — Firebase Performance Monitoring</td>
+  <td>App speed measurement</td>
+  <td>App start time, screen-render time, backend-request latency, device model, OS version</td>
 </tr>
 <tr>
   <td><strong>Google LLC</strong> — Firebase App Check</td>
@@ -150,6 +164,8 @@
 </thead>
 <tbody>
 <tr><td>Firebase Crashlytics reports</td><td>Up to 90 days</td></tr>
+<tr><td>Firebase Analytics events</td><td>Up to 14 months (Google's default); aggregated reports retained longer in anonymous form</td></tr>
+<tr><td>Firebase Performance Monitoring traces</td><td>Up to 90 days</td></tr>
 <tr><td>Firebase App Check tokens</td><td>Short-lived (seconds); not persisted</td></tr>
 <tr><td>Cloudflare edge logs</td><td>Per Cloudflare's standard retention; typically a few days for analytics on our plan</td></tr>
 <tr><td>Apache access logs (origin server)</td><td>Rotated daily by the operating system; up to 14 days of history retained, then deleted</td></tr>
@@ -166,7 +182,7 @@
 <ul>
   <li><strong>Uninstall the app</strong> — the most reliable way to stop all data collection from your device. After uninstall, the app sends no further crash reports or app-attestation tokens.</li>
   <li><strong>Request information</strong> about what (if any) diagnostic data is associated with your device by emailing <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>.</li>
-  <li><strong>Request deletion</strong> of crash data tied to your device's anonymous installation ID by emailing <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a> — we will pass the request to Google for processing through the Firebase Crashlytics deletion API.</li>
+  <li><strong>Request deletion</strong> of crash data and analytics events tied to your device's anonymous installation ID by emailing <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a> — we will pass the request to Google for processing through the Firebase Crashlytics and Firebase Analytics deletion APIs.</li>
   <li><strong>For reference:</strong> FreshFuel does not display ads, does not request Apple's App Tracking Transparency prompt, does not use the IDFA (iOS) or GAID (Android), and does not perform any cross-app or cross-site tracking. Apple's and Google's device-level "analytics" / "ad personalization" settings therefore do not control any FreshFuel data flow.</li>
 </ul>
 

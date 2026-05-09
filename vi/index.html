@@ -49,7 +49,7 @@
 <h1>FreshFuel — Chính sách Quyền riêng tư</h1>
 
 <div class="meta-banner">
-  <strong>Cập nhật lần cuối:</strong> 04/05/2026 &nbsp;·&nbsp; <strong>Ngày hiệu lực:</strong> 04/05/2026
+  <strong>Cập nhật lần cuối:</strong> 09/05/2026 &nbsp;·&nbsp; <strong>Ngày hiệu lực:</strong> 09/05/2026
 </div>
 
 <p class="lang-switch"><a href="../">English</a></p>
@@ -63,16 +63,18 @@
 <p><strong>Email:</strong> <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a></p>
 
 <h2>2. Phạm vi áp dụng</h2>
-<p>Chính sách này mô tả cách ứng dụng di động FreshFuel (iOS và Android) và máy chủ phụ trợ do GreenBite vận hành tại <code>api.mindfulmentor.vn</code> xử lý thông tin của bạn. Chính sách không áp dụng cho các trang web, dịch vụ hoặc ứng dụng do bên thứ ba vận hành.</p>
+<p>Chính sách này mô tả cách ứng dụng di động FreshFuel (iOS và Android) và máy chủ do GreenBite vận hành tại <code>api.mindfulmentor.vn</code> xử lý thông tin của bạn. Chính sách không áp dụng cho các trang web, dịch vụ hoặc ứng dụng do bên thứ ba vận hành.</p>
 
 <h2>3. Dữ liệu chúng tôi thu thập</h2>
-<p>FreshFuel <strong>không</strong> yêu cầu tài khoản hoặc đăng nhập, và ứng dụng không yêu cầu bất kỳ quyền truy cập thiết bị nào (không truy cập máy ảnh, thư viện ảnh, vị trí, danh bạ hay micro).</p>
-<p>Dữ liệu mà chúng tôi (hoặc các nhà cung cấp dịch vụ của chúng tôi) thu thập gồm:</p>
+<p>FreshFuel <strong>không</strong> cần tài khoản hay đăng nhập, và ứng dụng cũng không xin bất kỳ quyền truy cập thiết bị nào — không máy ảnh, thư viện ảnh, vị trí, danh bạ hay micro.</p>
+<p>Những dữ liệu mà chúng tôi (hoặc các nhà cung cấp dịch vụ của chúng tôi) thu thập gồm:</p>
 <ul>
-  <li><strong>Báo cáo sự cố</strong> — dấu vết ngăn xếp (stack trace), dòng máy, phiên bản hệ điều hành, phiên bản ứng dụng và các sự kiện trước khi xảy ra sự cố, nếu có (do Firebase Crashlytics thu thập).</li>
-  <li><strong>Mã chứng thực thiết bị</strong> — mã ngắn hạn do App Attest của Apple (iOS) hoặc Play Integrity của Google (Android) cấp, gửi trong mỗi yêu cầu đến máy chủ phụ trợ để xác minh yêu cầu đến từ bản ứng dụng chính thống, không bị chỉnh sửa (do Firebase App Check thu thập).</li>
-  <li><strong>Dữ liệu mạng tại biên và tại máy chủ</strong> — địa chỉ IP, đường dẫn yêu cầu, thời gian, chuỗi user-agent và thông tin TLS, được Cloudflare (biên mạng) và máy chủ web gốc của chúng tôi (Apache HTTP Server) xử lý phục vụ truyền tải, bảo mật và chống lạm dụng.</li>
-  <li><strong>Tùy chọn lưu trên thiết bị</strong> — ngôn ngữ đã chọn, vùng đã xem gần nhất và các trạng thái giao diện tương tự. Dữ liệu này nằm trên thiết bị của bạn và không bao giờ được gửi đi.</li>
+  <li><strong>Báo cáo sự cố</strong> — stack trace, model thiết bị, phiên bản hệ điều hành, phiên bản ứng dụng và các sự kiện dẫn đến sự cố, nếu có (do Firebase Crashlytics thu thập).</li>
+  <li><strong>Sự kiện sử dụng (ẩn danh)</strong> — bạn mở màn hình nào, duyệt danh mục gì, dùng tính năng nào (ví dụ: duyệt danh mục, tra cứu sức khỏe, xem theo mùa). Chúng tôi ghi nhận các tương tác này nhưng không ghi lại nội dung bạn gõ vào ô tìm kiếm (do Firebase Analytics thu thập, chỉ gắn với mã cài đặt ứng dụng ẩn danh, không liên kết với danh tính cá nhân).</li>
+  <li><strong>Dữ liệu hiệu năng</strong> — thời gian khởi động ứng dụng, thời gian hiển thị màn hình, độ trễ khi gọi máy chủ. Dùng để theo dõi và cải thiện tốc độ ứng dụng (do Firebase Performance Monitoring thu thập).</li>
+  <li><strong>Mã chứng thực thiết bị</strong> — mã ngắn hạn do App Attest của Apple (iOS) hoặc Play Integrity của Google (Android) cấp, gửi kèm mỗi lần ứng dụng gọi máy chủ để xác minh đây là bản chính thống chưa bị chỉnh sửa (do Firebase App Check thu thập).</li>
+  <li><strong>Dữ liệu mạng tại CDN và máy chủ</strong> — địa chỉ IP, đường dẫn yêu cầu, thời gian, user-agent và thông tin TLS, được Cloudflare (CDN) và máy chủ web gốc (Apache HTTP Server) sử dụng để truyền tải nội dung, bảo mật và chống lạm dụng.</li>
+  <li><strong>Cài đặt cá nhân trên thiết bị</strong> — ngôn ngữ đã chọn, vùng đã xem gần nhất và các trạng thái giao diện tương tự. Dữ liệu này nằm trên máy bạn và không gửi đi đâu cả.</li>
 </ul>
 
 <p>Chúng tôi <strong>không</strong> thu thập:</p>
@@ -88,10 +90,12 @@
 <h2>4. Mục đích sử dụng dữ liệu</h2>
 <p>Chúng tôi chỉ sử dụng dữ liệu ẩn danh để:</p>
 <ul>
-  <li>Phát hiện, chẩn đoán và khắc phục sự cố và lỗi phần mềm</li>
-  <li>Xác minh yêu cầu đến máy chủ đến từ bản ứng dụng chính thống (chống lạm dụng)</li>
+  <li>Phát hiện, chẩn đoán và khắc phục lỗi phần mềm</li>
+  <li>Tìm hiểu người dùng đang dùng tính năng nào nhiều nhất để cải tiến ứng dụng (ví dụ: mục tiêu sức khỏe nào được xem nhiều nhất, bộ lọc danh mục nào hữu ích nhất)</li>
+  <li>Theo dõi và cải thiện hiệu năng ứng dụng (thời gian khởi động, thời gian hiển thị màn hình, độ trễ máy chủ)</li>
+  <li>Xác minh các yêu cầu gửi đến máy chủ là từ bản ứng dụng chính thống (chống lạm dụng)</li>
 </ul>
-<p>Chúng tôi không bán hoặc cho thuê dữ liệu của bạn. Chúng tôi không sử dụng dữ liệu cho quảng cáo nhắm mục tiêu. Chúng tôi không lập hồ sơ cá nhân.</p>
+<p>Chúng tôi không bán hay chia sẻ dữ liệu của bạn. Không dùng dữ liệu để chạy quảng cáo nhắm mục tiêu. Không xây dựng hồ sơ người dùng.</p>
 
 <h2>5. Nhà cung cấp dịch vụ (đơn vị xử lý dữ liệu)</h2>
 <p>Các bên thứ ba sau xử lý dữ liệu thay mặt chúng tôi:</p>
@@ -104,7 +108,17 @@
 <tr>
   <td><strong>Google LLC</strong> — Firebase Crashlytics</td>
   <td>Báo cáo và chẩn đoán sự cố</td>
-  <td>Dấu vết ngăn xếp, thông tin thiết bị, phiên bản ứng dụng</td>
+  <td>Stack trace, thông tin thiết bị, phiên bản ứng dụng</td>
+</tr>
+<tr>
+  <td><strong>Google LLC</strong> — Firebase Analytics</td>
+  <td>Phân tích sử dụng tính năng (ẩn danh), liên kết với mã cài đặt ứng dụng — không liên kết với danh tính cá nhân</td>
+  <td>Lượt xem màn hình, sự kiện tính năng (ví dụ: "wellness_open", "product_open"), ngôn ngữ, mã cài đặt ẩn danh</td>
+</tr>
+<tr>
+  <td><strong>Google LLC</strong> — Firebase Performance Monitoring</td>
+  <td>Đo tốc độ ứng dụng</td>
+  <td>Thời gian khởi động, thời gian hiển thị màn hình, độ trễ máy chủ, model thiết bị, phiên bản hệ điều hành</td>
 </tr>
 <tr>
   <td><strong>Google LLC</strong> — Firebase App Check</td>
@@ -112,29 +126,29 @@
   <td>Mã chứng thực ngắn hạn</td>
 </tr>
 <tr>
-  <td><strong>Apple Inc.</strong> (đơn vị xử lý phụ chỉ trên iOS)</td>
+  <td><strong>Apple Inc.</strong> (chỉ áp dụng trên iOS)</td>
   <td>Cấp mã App Attest dùng cho Firebase App Check</td>
   <td>Chỉ thông tin chứng thực gắn với thiết bị</td>
 </tr>
 <tr>
   <td><strong>Cloudflare, Inc.</strong></td>
-  <td>Phân phối nội dung, bảo vệ DDoS và đảm nhận TLS cho máy chủ phụ trợ</td>
+  <td>Phân phối nội dung qua CDN, chống DDoS và xử lý TLS cho máy chủ</td>
   <td>Địa chỉ IP, dữ liệu yêu cầu, thời gian, báo cáo lỗi mạng</td>
 </tr>
 <tr>
-  <td><strong>Máy chủ phụ trợ của GreenBite</strong> tại <code>api.mindfulmentor.vn</code> (Apache HTTP Server + ứng dụng Go)</td>
-  <td>Phục vụ dữ liệu sản phẩm, dinh dưỡng, sức khỏe và mùa vụ cho ứng dụng</td>
+  <td><strong>Máy chủ của GreenBite</strong> tại <code>api.mindfulmentor.vn</code> (Apache HTTP Server + ứng dụng Go)</td>
+  <td>Cung cấp dữ liệu sản phẩm, dinh dưỡng, sức khỏe và mùa vụ cho ứng dụng</td>
   <td>Nhật ký truy cập của Apache (IP, yêu cầu, user-agent, mã trạng thái); ứng dụng Go không ghi nhật ký truy cập theo từng yêu cầu</td>
 </tr>
 <tr>
   <td><strong>Google LLC</strong> — Gemini API (chỉ phía máy chủ)</td>
-  <td>Tạo nội dung mô tả sản phẩm khi soạn nội dung (ví dụ: cách dùng trong ẩm thực, cách bảo quản)</td>
-  <td>Chỉ tên sản phẩm chung (ví dụ: "strawberry", "longan") — không bao giờ là dữ liệu của người dùng</td>
+  <td>Tạo nội dung mô tả sản phẩm trong quá trình biên soạn (ví dụ: cách dùng trong ẩm thực, cách bảo quản)</td>
+  <td>Chỉ tên sản phẩm chung (ví dụ: "dâu tây", "nhãn") — không gồm dữ liệu của người dùng</td>
 </tr>
 </tbody>
 </table>
 
-<p>Mỗi nhà cung cấp xử lý dữ liệu nêu trên theo chính sách quyền riêng tư của riêng họ:</p>
+<p>Mỗi nhà cung cấp xử lý dữ liệu theo chính sách quyền riêng tư của họ:</p>
 <ul>
   <li>Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
   <li>Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></li>
@@ -150,31 +164,33 @@
 </thead>
 <tbody>
 <tr><td>Báo cáo Firebase Crashlytics</td><td>Tối đa 90 ngày</td></tr>
+<tr><td>Sự kiện Firebase Analytics</td><td>Tối đa 14 tháng (mặc định của Google); báo cáo tổng hợp được lưu giữ lâu hơn dưới dạng ẩn danh</td></tr>
+<tr><td>Số liệu Firebase Performance Monitoring</td><td>Tối đa 90 ngày</td></tr>
 <tr><td>Mã Firebase App Check</td><td>Ngắn hạn (vài giây); không lưu trữ</td></tr>
-<tr><td>Nhật ký biên Cloudflare</td><td>Theo chính sách lưu trữ tiêu chuẩn của Cloudflare; thường vài ngày đối với gói của chúng tôi</td></tr>
-<tr><td>Nhật ký truy cập Apache (máy chủ gốc)</td><td>Tự động luân chuyển hằng ngày; lưu tối đa 14 ngày lịch sử rồi bị xóa</td></tr>
-<tr><td>Nhật ký ứng dụng Go</td><td>Không ghi nhật ký truy cập theo từng yêu cầu; chỉ các sự kiện chẩn đoán được ghi vào nhật ký hệ điều hành và tự động luân chuyển</td></tr>
+<tr><td>Nhật ký Cloudflare (CDN)</td><td>Theo chính sách lưu trữ tiêu chuẩn của Cloudflare; thường vài ngày đối với gói chúng tôi đang dùng</td></tr>
+<tr><td>Nhật ký truy cập Apache (máy chủ gốc)</td><td>Tự động xoay vòng hằng ngày; giữ lại tối đa 14 ngày rồi xóa</td></tr>
+<tr><td>Nhật ký ứng dụng Go</td><td>Không ghi nhật ký truy cập theo từng yêu cầu; chỉ ghi các sự kiện chẩn đoán vào nhật ký hệ điều hành và tự động xoay vòng</td></tr>
 <tr><td>Tùy chọn lưu trên thiết bị</td><td>Cho đến khi bạn gỡ ứng dụng hoặc xóa dữ liệu ứng dụng</td></tr>
 </tbody>
 </table>
 
 <h2>7. Nội dung do AI tạo</h2>
-<p>Một phần nội dung mô tả hiển thị trong ứng dụng — đặc biệt là phần tổng quan dài về sản phẩm, cách sử dụng trong ẩm thực và mẹo bảo quản — được tạo phía máy chủ bằng AI (Google Gemini) và sau đó được kiểm tra, biên tập lại để đảm bảo chính xác. <strong>Tương tác của bạn với ứng dụng không bao giờ được gửi đến Gemini.</strong> Chỉ tên sản phẩm chung (như "strawberry" hoặc "longan") được gửi trong quá trình soạn nội dung, và việc đó diễn ra phía chúng tôi, không phải phía bạn. Văn bản do AI tạo đôi khi có thể có sai sót; vui lòng tham khảo các nguồn uy tín cho các quyết định quan trọng về sức khỏe hoặc dinh dưỡng.</p>
+<p>Một phần nội dung mô tả trong ứng dụng — đặc biệt là phần tổng quan về sản phẩm, cách dùng trong ẩm thực và mẹo bảo quản — được tạo ở phía máy chủ bằng AI (Google Gemini) rồi được rà soát và biên tập lại để đảm bảo chính xác. <strong>Tương tác của bạn với ứng dụng không hề được gửi tới Gemini.</strong> Chỉ tên sản phẩm chung (như "dâu tây" hay "nhãn") được gửi đi trong quá trình biên soạn, và việc này diễn ra ở phía chúng tôi, không liên quan đến thiết bị của bạn. Nội dung do AI tạo có thể có sai sót; với các quyết định quan trọng về sức khỏe hay dinh dưỡng, vui lòng tham khảo các nguồn chính thống.</p>
 
 <h2>8. Quyền và lựa chọn của bạn</h2>
-<p>Vì FreshFuel không thu thập thông tin định danh cá nhân, các tùy chọn của bạn là:</p>
+<p>Vì FreshFuel không thu thập thông tin định danh cá nhân, bạn có thể:</p>
 <ul>
-  <li><strong>Gỡ ứng dụng</strong> — cách đáng tin cậy nhất để dừng mọi hoạt động thu thập dữ liệu từ thiết bị của bạn. Sau khi gỡ, ứng dụng không gửi thêm bất kỳ báo cáo sự cố hay mã chứng thực nào.</li>
-  <li><strong>Yêu cầu thông tin</strong> về dữ liệu chẩn đoán (nếu có) liên kết với thiết bị của bạn bằng cách gửi email đến <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>.</li>
-  <li><strong>Yêu cầu xóa</strong> dữ liệu sự cố gắn với mã cài đặt ẩn danh của thiết bị bạn bằng cách gửi email đến <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a> — chúng tôi sẽ chuyển yêu cầu cho Google xử lý qua API xóa dữ liệu của Firebase Crashlytics.</li>
-  <li><strong>Lưu ý:</strong> FreshFuel không hiển thị quảng cáo, không yêu cầu thông báo App Tracking Transparency của Apple, không sử dụng IDFA (iOS) hay GAID (Android), và không thực hiện theo dõi xuyên ứng dụng hoặc xuyên trang. Do đó, các tùy chọn "phân tích" / "cá nhân hóa quảng cáo" ở cấp thiết bị của Apple và Google không kiểm soát bất kỳ luồng dữ liệu nào của FreshFuel.</li>
+  <li><strong>Gỡ ứng dụng</strong> — cách chắc chắn nhất để dừng mọi hoạt động thu thập dữ liệu từ thiết bị. Sau khi gỡ, ứng dụng sẽ không gửi thêm báo cáo sự cố hay mã chứng thực nào.</li>
+  <li><strong>Yêu cầu thông tin</strong> về dữ liệu chẩn đoán (nếu có) liên quan đến thiết bị của bạn — gửi email đến <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>.</li>
+  <li><strong>Yêu cầu xóa</strong> dữ liệu sự cố và sự kiện phân tích gắn với mã cài đặt ẩn danh của thiết bị — gửi email đến <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>, chúng tôi sẽ chuyển yêu cầu sang Google xử lý qua API xóa dữ liệu của Firebase Crashlytics và Firebase Analytics.</li>
+  <li><strong>Lưu ý:</strong> FreshFuel không hiển thị quảng cáo, không yêu cầu thông báo App Tracking Transparency của Apple, không sử dụng IDFA (iOS) hay GAID (Android), và không theo dõi xuyên ứng dụng hay xuyên trang. Vì vậy, các cài đặt "phân tích" / "cá nhân hóa quảng cáo" ở cấp thiết bị của Apple hay Google không ảnh hưởng đến luồng dữ liệu của FreshFuel.</li>
 </ul>
 
 <h2>9. Quyền riêng tư của trẻ em</h2>
-<p>FreshFuel là ứng dụng tra cứu dành cho đối tượng phổ thông. Ứng dụng không hướng đến trẻ em dưới 13 tuổi (hoặc độ tuổi tối thiểu tương đương ở quốc gia của bạn). Chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em. Nếu bạn cho rằng dữ liệu của trẻ em đã bị thu thập do nhầm lẫn, vui lòng liên hệ chúng tôi để xóa.</p>
+<p>FreshFuel là ứng dụng tra cứu dành cho người dùng phổ thông. Ứng dụng không hướng đến trẻ em dưới 13 tuổi (hoặc độ tuổi tối thiểu tương đương ở quốc gia bạn đang sống). Chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em. Nếu bạn phát hiện dữ liệu của trẻ em bị thu thập do nhầm lẫn, vui lòng liên hệ để chúng tôi xóa.</p>
 
 <h2>10. Bảo mật</h2>
-<p>Chúng tôi dựa vào tiêu chuẩn bảo mật của Google, Apple và Cloudflare đối với dữ liệu nêu trên. Liên lạc giữa ứng dụng và máy chủ phụ trợ được mã hóa bằng TLS 1.2 trở lên. Vì chúng tôi không tự thu thập thông tin cá nhân, chúng tôi không lưu giữ dữ liệu người dùng trên hệ thống riêng có thể bị lộ trong sự cố bảo mật.</p>
+<p>Chúng tôi dựa vào tiêu chuẩn bảo mật của Google, Apple và Cloudflare đối với dữ liệu nêu trên. Trao đổi giữa ứng dụng và máy chủ được mã hóa bằng TLS 1.2 trở lên. Vì bản thân chúng tôi không thu thập thông tin cá nhân, không có dữ liệu người dùng nào được lưu trên hệ thống riêng có thể bị lộ trong một sự cố bảo mật.</p>
 
 <h2>11. Người dùng tại Úc</h2>
 <p>GreenBite cam kết xử lý thông tin cá nhân theo <strong>Privacy Act 1988 (Cth)</strong> và <strong>Australian Privacy Principles (APPs)</strong>. Bạn có thể yêu cầu truy cập, chỉnh sửa hoặc xóa thông tin về mình bằng cách liên hệ <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>. Nếu không hài lòng với phản hồi, bạn có thể liên hệ Office of the Australian Information Commissioner (OAIC) tại <a href="https://www.oaic.gov.au">https://www.oaic.gov.au</a>.</p>
@@ -185,20 +201,20 @@
   <li>Tiếp cận thông tin về cách dữ liệu cá nhân của bạn được xử lý</li>
   <li>Chỉnh sửa dữ liệu cá nhân không chính xác</li>
   <li>Yêu cầu xóa dữ liệu cá nhân của bạn</li>
-  <li>Rút lại sự đồng ý bất kỳ lúc nào</li>
+  <li>Rút lại sự đồng ý bất cứ lúc nào</li>
   <li>Quyền chuyển dữ liệu — nhận dữ liệu cá nhân của bạn ở định dạng có cấu trúc, có thể đọc bằng máy</li>
   <li>Khiếu nại với Cục An ninh mạng và Phòng, chống tội phạm sử dụng công nghệ cao (A05) thuộc Bộ Công an về việc xử lý dữ liệu cá nhân của bạn</li>
 </ul>
 <p>Để thực hiện bất kỳ quyền nào ở trên, vui lòng liên hệ <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>.</p>
 
 <h2>13. Truyền dữ liệu quốc tế</h2>
-<p>Các nhà cung cấp dịch vụ của chúng tôi (Google, Cloudflare, Apple) hoạt động trên phạm vi toàn cầu. Dữ liệu mô tả trong chính sách này có thể được xử lý tại các khu vực ngoài Úc và Việt Nam, bao gồm Hoa Kỳ và Singapore. Các nhà cung cấp này duy trì các biện pháp bảo vệ (bao gồm Điều khoản Hợp đồng Tiêu chuẩn của EU khi áp dụng) cho việc truyền dữ liệu xuyên biên giới.</p>
+<p>Các nhà cung cấp dịch vụ của chúng tôi (Google, Cloudflare, Apple) hoạt động trên phạm vi toàn cầu. Dữ liệu mô tả trong chính sách này có thể được xử lý tại các khu vực ngoài Úc và Việt Nam, bao gồm Hoa Kỳ và Singapore. Các nhà cung cấp này duy trì những biện pháp bảo vệ (bao gồm Điều khoản Hợp đồng Tiêu chuẩn của EU khi áp dụng) khi truyền dữ liệu xuyên biên giới.</p>
 
 <h2>14. Tuyên bố miễn trừ về sức khỏe và dinh dưỡng</h2>
-<p>FreshFuel cung cấp thông tin tổng quát về thực phẩm tươi sống và thực phẩm động vật, bao gồm dữ liệu dinh dưỡng và cách sử dụng trong ẩm thực truyền thống. <strong>Đây không phải là dịch vụ y tế, chẩn đoán hay điều trị.</strong> Thông tin trong ứng dụng không thay thế cho lời khuyên y tế chuyên môn. Hãy luôn tham khảo ý kiến chuyên gia y tế có chuyên môn về tình trạng sức khỏe cá nhân của bạn.</p>
+<p>FreshFuel cung cấp thông tin tổng quát về thực phẩm tươi và thực phẩm có nguồn gốc động vật, bao gồm dữ liệu dinh dưỡng và cách dùng trong ẩm thực truyền thống. <strong>Đây không phải là dịch vụ y tế, chẩn đoán hay điều trị.</strong> Thông tin trong ứng dụng không thay thế cho tư vấn y tế chuyên môn. Hãy luôn tham khảo ý kiến bác sĩ hoặc chuyên gia y tế về tình trạng sức khỏe của bạn.</p>
 
 <h2>15. Thay đổi chính sách</h2>
-<p>Chúng tôi có thể cập nhật chính sách này theo thời gian. Các thay đổi quan trọng sẽ được phản ánh ở mục <strong>Cập nhật lần cuối</strong> ở đầu trang. Việc tiếp tục sử dụng FreshFuel sau khi có thay đổi đồng nghĩa với việc bạn chấp nhận chính sách đã cập nhật.</p>
+<p>Chúng tôi có thể cập nhật chính sách này theo thời gian. Các thay đổi quan trọng sẽ được ghi nhận ở mục <strong>Cập nhật lần cuối</strong> ở đầu trang. Việc bạn tiếp tục sử dụng FreshFuel sau khi chính sách thay đổi đồng nghĩa với việc bạn chấp nhận chính sách mới.</p>
 
 <h2>16. Liên hệ</h2>
 <p>Trần Hoàng Phú (Andy Tran), hoạt động dưới tên thương mại GreenBite<br>
