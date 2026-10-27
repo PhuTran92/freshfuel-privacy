@@ -49,7 +49,7 @@
 <h1>FreshFuel — Privacy Policy</h1>
 
 <div class="meta-banner">
-  <strong>Last updated:</strong> 9 May 2026 &nbsp;·&nbsp; <strong>Effective:</strong> 9 May 2026
+  <strong>Last updated:</strong> 29 June 2026 &nbsp;·&nbsp; <strong>Effective:</strong> 9 May 2026
 </div>
 
 <p class="lang-switch"><a href="./vi/">Tiếng Việt</a></p>
@@ -66,7 +66,7 @@
 <p>This policy describes how the FreshFuel mobile app (iOS and Android) and the GreenBite-operated backend service at <code>api.mindfulmentor.vn</code> handle information about you. It does not cover other websites, services, or apps that we do not operate.</p>
 
 <h2>3. What data we collect</h2>
-<p>FreshFuel does <strong>not</strong> require an account or sign-in, and the app does not request any device permissions (no camera, photo library, location, contacts, or microphone access).</p>
+<p>FreshFuel does <strong>not</strong> require an account or sign-in. The only device permission the app may request is permission to show <strong>notifications</strong> — optional, for the reminders described in Section 16. It does not request camera, photo library, location, contacts, or microphone access.</p>
 <p>The data we (or our service providers) collect is:</p>
 <ul>
   <li><strong>Crash reports</strong> — stack traces, device model, OS version, app version, and the events leading up to a crash, if one occurs (collected by Firebase Crashlytics).</li>
@@ -75,6 +75,7 @@
   <li><strong>Device-attestation tokens</strong> — short-lived tokens issued by Apple's App Attest (iOS) or Google's Play Integrity (Android), sent on each backend request to verify that requests come from a genuine, unmodified copy of the app (collected by Firebase App Check).</li>
   <li><strong>Network metadata at the edge and server</strong> — IP address, request path, timestamp, user-agent, and TLS-handshake details, processed by Cloudflare (network edge) and our origin web server (Apache HTTP Server) for delivery, security, and abuse prevention.</li>
   <li><strong>Local on-device preferences</strong> — your selected language, last-viewed region, and similar interface state. This stays on your device and never leaves it.</li>
+  <li><strong>Local "Eat the Rainbow" data</strong> — the produce colours and foods you choose to log, your streaks, and your reminder settings. This is stored only on your device (in a local on-device database) and is never sent to our servers. You can export it as a file or delete it from within the app.</li>
 </ul>
 
 <p>We do <strong>not</strong> collect:</p>
@@ -171,6 +172,7 @@
 <tr><td>Apache access logs (origin server)</td><td>Rotated daily by the operating system; up to 14 days of history retained, then deleted</td></tr>
 <tr><td>Go application logs</td><td>No per-request access logging; only diagnostic events captured by the OS journal, which rotates automatically</td></tr>
 <tr><td>Local on-device preferences</td><td>Until you uninstall the app or clear app data</td></tr>
+<tr><td>Local "Eat the Rainbow" logs and reminder settings</td><td>Until you delete them in the app or uninstall</td></tr>
 </tbody>
 </table>
 
@@ -183,6 +185,7 @@
   <li><strong>Uninstall the app</strong> — the most reliable way to stop all data collection from your device. After uninstall, the app sends no further crash reports or app-attestation tokens.</li>
   <li><strong>Request information</strong> about what (if any) diagnostic data is associated with your device by emailing <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>.</li>
   <li><strong>Request deletion</strong> of crash data and analytics events tied to your device's anonymous installation ID by emailing <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a> — we will pass the request to Google for processing through the Firebase Crashlytics and Firebase Analytics deletion APIs.</li>
+  <li><strong>Control notifications</strong> — turn the optional "Eat the Rainbow" reminders on or off in the app (Settings → Rainbow) or in your device's system notification settings, and export or delete your on-device colour log from within the app. See Section 16.</li>
   <li><strong>For reference:</strong> FreshFuel does not display ads, does not request Apple's App Tracking Transparency prompt, does not use the IDFA (iOS) or GAID (Android), and does not perform any cross-app or cross-site tracking. Apple's and Google's device-level "analytics" / "ad personalization" settings therefore do not control any FreshFuel data flow.</li>
 </ul>
 
@@ -216,7 +219,11 @@
 <h2>15. Changes to this policy</h2>
 <p>We may update this policy from time to time. Material changes will be reflected in the <strong>Last updated</strong> date at the top of this page. Continued use of FreshFuel after a change constitutes acceptance of the updated policy.</p>
 
-<h2>16. Contact</h2>
+<h2>16. Notifications</h2>
+<p>FreshFuel can send you optional reminders to help you eat a variety of colours (the "Eat the Rainbow" feature). These are <strong>local notifications</strong> scheduled on your device — their content is generated on your device and is <strong>not</strong> sent to or through our servers, and we do not use push tokens or any remote messaging service for them.</p>
+<p>On first use the app asks for your permission to show notifications; you may decline. You choose how often reminders appear, and you can turn them off at any time in the app (<strong>Settings → Rainbow</strong>) or in your device's system notification settings. The colours and foods you log for this feature are stored only on your device, are never transmitted to us, and can be exported or deleted by you from within the app.</p>
+
+<h2>17. Contact</h2>
 <p>Tran Hoang Phu (Andy Tran), trading as GreenBite<br>
 Email: <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a></p>
 

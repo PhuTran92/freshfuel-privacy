@@ -49,7 +49,7 @@
 <h1>FreshFuel — Chính sách Quyền riêng tư</h1>
 
 <div class="meta-banner">
-  <strong>Cập nhật lần cuối:</strong> 09/05/2026 &nbsp;·&nbsp; <strong>Ngày hiệu lực:</strong> 09/05/2026
+  <strong>Cập nhật lần cuối:</strong> 29/06/2026 &nbsp;·&nbsp; <strong>Ngày hiệu lực:</strong> 09/05/2026
 </div>
 
 <p class="lang-switch"><a href="../">English</a></p>
@@ -66,7 +66,7 @@
 <p>Chính sách này mô tả cách ứng dụng di động FreshFuel (iOS và Android) và máy chủ do GreenBite vận hành tại <code>api.mindfulmentor.vn</code> xử lý thông tin của bạn. Chính sách không áp dụng cho các trang web, dịch vụ hoặc ứng dụng do bên thứ ba vận hành.</p>
 
 <h2>3. Dữ liệu chúng tôi thu thập</h2>
-<p>FreshFuel <strong>không</strong> cần tài khoản hay đăng nhập, và ứng dụng cũng không xin bất kỳ quyền truy cập thiết bị nào — không máy ảnh, thư viện ảnh, vị trí, danh bạ hay micro.</p>
+<p>FreshFuel <strong>không</strong> cần tài khoản hay đăng nhập. Quyền truy cập thiết bị duy nhất mà ứng dụng có thể xin là quyền hiển thị <strong>thông báo</strong> — tùy chọn, dùng cho các lời nhắc nêu ở Mục 16. Ứng dụng không xin quyền máy ảnh, thư viện ảnh, vị trí, danh bạ hay micro.</p>
 <p>Những dữ liệu mà chúng tôi (hoặc các nhà cung cấp dịch vụ của chúng tôi) thu thập gồm:</p>
 <ul>
   <li><strong>Báo cáo sự cố</strong> — stack trace, model thiết bị, phiên bản hệ điều hành, phiên bản ứng dụng và các sự kiện dẫn đến sự cố, nếu có (do Firebase Crashlytics thu thập).</li>
@@ -75,6 +75,7 @@
   <li><strong>Mã chứng thực thiết bị</strong> — mã ngắn hạn do App Attest của Apple (iOS) hoặc Play Integrity của Google (Android) cấp, gửi kèm mỗi lần ứng dụng gọi máy chủ để xác minh đây là bản chính thống chưa bị chỉnh sửa (do Firebase App Check thu thập).</li>
   <li><strong>Dữ liệu mạng tại CDN và máy chủ</strong> — địa chỉ IP, đường dẫn yêu cầu, thời gian, user-agent và thông tin TLS, được Cloudflare (CDN) và máy chủ web gốc (Apache HTTP Server) sử dụng để truyền tải nội dung, bảo mật và chống lạm dụng.</li>
   <li><strong>Cài đặt cá nhân trên thiết bị</strong> — ngôn ngữ đã chọn, vùng đã xem gần nhất và các trạng thái giao diện tương tự. Dữ liệu này nằm trên máy bạn và không gửi đi đâu cả.</li>
+  <li><strong>Dữ liệu "Cầu Vồng Dinh Dưỡng" trên thiết bị</strong> — các màu sắc và món ăn bạn chọn ghi lại, chuỗi ngày của bạn và cài đặt lời nhắc. Dữ liệu này chỉ được lưu trên thiết bị của bạn (trong cơ sở dữ liệu cục bộ) và không bao giờ được gửi tới máy chủ của chúng tôi. Bạn có thể xuất ra tệp hoặc xóa ngay trong ứng dụng.</li>
 </ul>
 
 <p>Chúng tôi <strong>không</strong> thu thập:</p>
@@ -171,6 +172,7 @@
 <tr><td>Nhật ký truy cập Apache (máy chủ gốc)</td><td>Tự động xoay vòng hằng ngày; giữ lại tối đa 14 ngày rồi xóa</td></tr>
 <tr><td>Nhật ký ứng dụng Go</td><td>Không ghi nhật ký truy cập theo từng yêu cầu; chỉ ghi các sự kiện chẩn đoán vào nhật ký hệ điều hành và tự động xoay vòng</td></tr>
 <tr><td>Tùy chọn lưu trên thiết bị</td><td>Cho đến khi bạn gỡ ứng dụng hoặc xóa dữ liệu ứng dụng</td></tr>
+<tr><td>Nhật ký "Cầu Vồng Dinh Dưỡng" và cài đặt lời nhắc (trên thiết bị)</td><td>Cho đến khi bạn xóa trong ứng dụng hoặc gỡ ứng dụng</td></tr>
 </tbody>
 </table>
 
@@ -183,6 +185,7 @@
   <li><strong>Gỡ ứng dụng</strong> — cách chắc chắn nhất để dừng mọi hoạt động thu thập dữ liệu từ thiết bị. Sau khi gỡ, ứng dụng sẽ không gửi thêm báo cáo sự cố hay mã chứng thực nào.</li>
   <li><strong>Yêu cầu thông tin</strong> về dữ liệu chẩn đoán (nếu có) liên quan đến thiết bị của bạn — gửi email đến <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>.</li>
   <li><strong>Yêu cầu xóa</strong> dữ liệu sự cố và sự kiện phân tích gắn với mã cài đặt ẩn danh của thiết bị — gửi email đến <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a>, chúng tôi sẽ chuyển yêu cầu sang Google xử lý qua API xóa dữ liệu của Firebase Crashlytics và Firebase Analytics.</li>
+  <li><strong>Quản lý thông báo</strong> — bật hoặc tắt các lời nhắc "Cầu Vồng Dinh Dưỡng" tùy chọn trong ứng dụng (Cài đặt → Cầu Vồng) hoặc trong cài đặt thông báo hệ thống của thiết bị, và xuất hoặc xóa nhật ký màu sắc lưu trên thiết bị ngay trong ứng dụng. Xem Mục 16.</li>
   <li><strong>Lưu ý:</strong> FreshFuel không hiển thị quảng cáo, không yêu cầu thông báo App Tracking Transparency của Apple, không sử dụng IDFA (iOS) hay GAID (Android), và không theo dõi xuyên ứng dụng hay xuyên trang. Vì vậy, các cài đặt "phân tích" / "cá nhân hóa quảng cáo" ở cấp thiết bị của Apple hay Google không ảnh hưởng đến luồng dữ liệu của FreshFuel.</li>
 </ul>
 
@@ -216,7 +219,11 @@
 <h2>15. Thay đổi chính sách</h2>
 <p>Chúng tôi có thể cập nhật chính sách này theo thời gian. Các thay đổi quan trọng sẽ được ghi nhận ở mục <strong>Cập nhật lần cuối</strong> ở đầu trang. Việc bạn tiếp tục sử dụng FreshFuel sau khi chính sách thay đổi đồng nghĩa với việc bạn chấp nhận chính sách mới.</p>
 
-<h2>16. Liên hệ</h2>
+<h2>16. Thông báo</h2>
+<p>FreshFuel có thể gửi cho bạn các lời nhắc tùy chọn để giúp bạn ăn đa dạng màu sắc (tính năng "Cầu Vồng Dinh Dưỡng"). Đây là các <strong>thông báo cục bộ</strong> được lên lịch ngay trên thiết bị của bạn — nội dung được tạo trên thiết bị và <strong>không</strong> được gửi đến hay đi qua máy chủ của chúng tôi; chúng tôi cũng không dùng push token hay dịch vụ nhắn tin từ xa nào cho chúng.</p>
+<p>Khi dùng lần đầu, ứng dụng sẽ xin phép bạn để hiển thị thông báo; bạn có thể từ chối. Bạn tự chọn tần suất lời nhắc và có thể tắt bất cứ lúc nào trong ứng dụng (<strong>Cài đặt → Cầu Vồng</strong>) hoặc trong cài đặt thông báo hệ thống của thiết bị. Các màu sắc và món ăn bạn ghi lại cho tính năng này chỉ được lưu trên thiết bị của bạn, không bao giờ được truyền đến chúng tôi, và bạn có thể xuất ra hoặc xóa ngay trong ứng dụng.</p>
+
+<h2>17. Liên hệ</h2>
 <p>Trần Hoàng Phú (Andy Tran), hoạt động dưới tên thương mại GreenBite<br>
 Email: <a href="mailto:greenbite.dev@gmail.com">greenbite.dev@gmail.com</a></p>
 
